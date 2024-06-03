@@ -1,0 +1,899 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.nav{
+
+    width: 100%;
+    height: 60px;
+    background-color:black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: auto;
+    z-index: 4;
+
+}
+
+.nav img{
+width: 100px;
+height: 60px;
+margin-left: 150px  ;
+position: absolute;
+top: 0;
+left: 0;
+}
+
+
+.header{
+    width: 100%;
+    height: 70px;
+    background-color: #01101a;
+    overflow: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+.logo{
+    float: left;
+    width: 140px;
+    height: 80px;
+    margin-left: 100px;
+}
+.list{
+    float: right;
+    list-style: none;
+    margin-right: 200px;
+}
+.list li{
+    display: inline-block;
+    margin-left: 25px;
+    color: white;
+    font-size: 22px;
+    margin-top: 4px;
+    position: relative;
+    margin-top: 20px;
+}
+
+.list li a::after{
+    position: absolute;
+    content: '';
+    width: 0%;
+    height: 3px;
+    transition: .3s;
+    background-color: whitesmoke;
+    bottom: -6px;
+    left: 0px;
+}
+.list li a{
+    color: white;
+    text-decoration: none;
+}
+.list li a:hover::after{
+    width: 100%;
+}
+
+
+
+.home {
+    width:100%;
+    text-align: center;
+    background-image: url(../images/mus.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh; 
+    padding-top: 80px;
+
+
+}
+h1{
+    font-size: 80px;
+    font-weight: bold;
+    color: #01101a;
+}
+.text p{
+    font-size: 30px;
+    font-weight: bold;
+    color:whitesmoke;
+}
+
+.home .text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 3;
+    width: 60%;
+}
+.home .button1{
+    margin: 0 14px;
+    padding: 11px;
+    border: none;
+    border-radius: 4px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.4s;
+
+
+}
+
+.home .button2{
+    margin: 0 14px;
+    padding: 11px;
+    border: none;
+    border-radius: 4px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.4s;
+
+}
+ #button:hover{
+    background-color: white;
+    color: black;
+ }
+
+ .container{
+    width: 80%;
+    margin: auto;
+}
+.about{
+    margin-top: 120px;
+}
+.title{
+ text-align: center;
+ font-size: 42px;
+ position: relative;
+ margin-bottom: 70px;
+}
+.title::before{
+    content: '';
+    position: absolute;
+    width: 20%;
+    height: 6px;
+    background-color: #17242d;
+    bottom: -18px;
+    left: 40%;
+    border-radius: 0px 0px 20px 20px;
+}
+.about{
+    overflow: hidden;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    width: 100%;
+}
+.about .box{
+    padding: 12px;
+    border: 1px solid #01101a;
+    width: 30%;
+    height: 300px;
+    cursor: pointer;
+    float: left;
+    text-align: center;
+    position: relative;
+}
+
+.about .box::after{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    background-color: #f3a84c;
+    z-index: -1;
+    transition: .6s;
+    width: 0;
+    height: 0;
+}
+.about .box:hover.box::after{
+    width: 100%;
+    height: 100%;
+}
+.about .box:hover.box h3{
+  color: azure;
+}
+.about .box:hover.box i{
+    color: chocolate;
+  }
+  .about .box:hover.box p{
+    color: chocolate;
+  }
+  .about .box:hover.box a{
+    background-color: white;
+    color: chocolate;
+  }
+.about .box i{
+    color: #17242d;
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+.about .box h3{
+    font-size: 26px;
+    color: chocolate;
+    letter-spacing: 2;
+    font-weight: 100;
+    margin-bottom: 10px;
+}
+.about .box p{
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 2;
+    margin-bottom: 40px;
+}
+.about .box a{
+    text-decoration: none;
+    padding: 6px 10px;
+    width: 40%;
+    background-color: #17242d;
+    color: beige;
+    border-radius: 3px;
+    font-size: 20px;
+}
+
+.glary{
+    width: 100%;
+    background-color: #8080803d;
+    padding: 70px 0;
+}
+.glary{
+    overflow: auto;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    width: 100%;
+}
+.glary .image{
+    position: relative;
+    background-size: cover;
+    width: 30%;
+    background-position: center;
+    height: 300px;
+    float: left;
+    cursor: pointer;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+.glary .image:hover.image::after{
+    height: 100%;
+}
+.glary .image:hover.image .content{
+    visibility: visible;
+}
+.glary .img1{
+    background-image: url(../images/ok.jpg);
+}
+.glary .img2{
+    background-image: url(../images/gg.jpg);
+}
+.glary .img3{
+    background-image: url(../images/flute.jpg);
+}
+.glary .img4{
+    background-image: url(../images/pp.jpg);
+}
+.glary .img5{
+    background-image: url(../images/ddd.jpg);
+}
+.glary .img6{
+    background-image: url(../images/qq.jpg)
+}
+.glary .image::after{
+    position: absolute;
+    content: '';
+    top: 0;
+    width: 100%;
+    height: 0px;
+    border-radius: 12px;
+    background-color: #ff6f006e;
+    transition: .6s;
+}
+.glary .image .content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:black;
+    text-align: center;
+    z-index: 10;
+    visibility: hidden;
+    transition: .3s;
+}
+.glary .image .content h4{
+    font-size: 36px;
+    letter-spacing: 2;
+    margin-bottom: -10px;
+}
+.glary .image .content p{
+    font-weight: bold;
+    color: whitesmoke;
+    font-size: 22px;
+}
+.glary .image .content span{
+    margin: 0px 10px;
+}
+.glary .image .content span i{
+    border-radius: 6px;
+    padding: 8px;
+    background-color: #17242d;
+    cursor: pointer;
+    color: brown;
+    font-size: 22px;
+}
+
+
+.services{
+    overflow: auto;
+    margin-top: 60px;
+    margin-bottom:60px;
+    width: 100%;
+}
+.services .box{
+    padding: 12px;
+    border: 1px solid #17242d;
+    width: 30%;
+    height: 250px;
+    float: left;
+    position: relative;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+.services .box::after{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    background-color: #17242d;
+    z-index: -1;
+    transition: .6s;
+    width: 0;
+    height: 0;
+}
+.services .box:hover.box::after{
+    width: 100%;
+    height: 100%;
+}
+.services .box:hover.box h3{
+  color: white;
+}
+.services .box:hover.box p{
+    color:#f3a84c;
+}
+.services .box:hover.box i{
+  color:whitesmoke;
+}
+.services .box h3{
+    font-size: 30px;
+    color: chocolate;
+    font-weight: 300;
+    margin-left: 30px;
+}
+.services .box p{
+    font-weight: bold;
+    margin-left: 30px;
+    line-height: 2;
+    font-size: 18px;
+    letter-spacing: 1.5;
+}
+.services .box i{
+    position: absolute;
+    top: 49px;
+    font-size: 30px;
+    left: 3px;
+    color: #17242d;
+}
+
+.Why{
+    background-color: #e1e1e1;
+    margin: 60px 0px;
+    overflow: auto;
+    padding: 60px 0px;
+}
+.Why .left{
+ float: left;
+ max-width: 50%;
+}
+.Why .left h2{
+    font-size: 36px;
+    letter-spacing: 3;
+    color: #17242d;
+    position: relative;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.Why .left h2::after{
+    position: absolute;
+    content: '';
+    width: 14%;
+    height: 4px;
+    background-color: black;
+    left: 0;
+    bottom: -8px;
+}
+.Why .left p{
+    color: brown;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 80%;
+    margin-bottom: 20px;
+}
+.Why .left span:not(:nth-child(1)){
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+.Why .left span i{
+    font-size: 18px;
+    margin-right: 3px;
+    color:chocolate;
+}
+.right{
+    float: right;
+    max-width: 50%;
+}
+.right img{
+    max-width: 100%;
+    height: 400px;
+    border-radius: 8px;
+}
+.right .polits{
+    margin: 10px auto;
+    text-align: center;
+}
+.right .polits span{
+    width: 8px;
+    display: inline-block;
+    height: 8px;
+    margin: 3px;
+    background-color: #17242d;
+    border-radius: 50%;
+    transition: .3s;
+    cursor: pointer;
+}
+.right .polits span:hover{
+    background-color:chocolate;
+}
+
+.icons{
+    width: 100%;
+    height: 400px;
+    background-image: url(../images/plp.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 60px 0;
+    position: relative;
+}
+.icons::after{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.363);
+    z-index: 0;
+}
+.icons .container{
+    padding: 150px 0px;
+}
+.icons .container .box{
+    width: 20%;
+    text-align: center;
+    float: left;
+    color: white;
+    z-index: 2;
+    position: relative;
+}
+.icons .container .box i{
+    font-size: 40px;
+    padding: 25px 30px;
+    color: chocolate;
+    border: 4px solid;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-bottom: 12px;
+    transition: .4s;
+}
+.icons .container .box i:hover{
+    transform: translateY(-4px);
+    background-color: white;
+    border-color: chocolate;
+}
+.icons .container .box h2{
+  font-size: 34px;
+  margin-bottom: 10px;
+}
+.icons .container .box p{
+    font-size: 24px;
+  font-weight: bold;
+ 
+}
+
+
+.pricing{
+    margin: 60px 0px;
+}
+.pricing .container{
+    overflow: auto;
+}
+.pricing .container .box{
+    width: 30%;
+    float: left;
+    border: 1px solid black;
+    padding: 16px;
+    text-align: center;
+    position: relative;
+    transition: .3s;
+}
+.pricing .container .box:hover{
+    border-color: #f3a84c;
+}
+.pricing .container .box:hover::after{
+    height: 100%;
+}
+.pricing .container .box:hover::before{
+    height: 100%;
+}
+.pricing .container .box::before{
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 0%;
+  background-color: #f7bd0038;
+  transition: 1s;
+
+}
+.pricing .container .box::after{
+    position: absolute;
+    content: '';
+    bottom: 0;
+    right: 0;
+    width: 50%;
+    height: 0%;
+    background-color: #6f676a1c;
+    transition: 1s;
+
+  }
+.pricing .container .box h2{
+    color: chocolate;
+    font-size: 33px;
+}
+.pricing .container .box .cercale{
+    margin: 30px auto;
+    padding: 10px;
+    border: 1px dashed black;
+    border-radius: 50%;
+    width: 130px;
+    height: 130px;
+}
+
+.pricing .container .box .cercale p{
+    font-weight: bold;
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+.pricing .container .box .cercale span{
+    font-weight: bold;
+    color: #f3a84c;
+    font-size: 22px;
+}
+.pricing .container .pricing-content span{
+    display: block;
+    margin: 10px;
+    color: rgba(0, 0, 0, 0.675);
+    letter-spacing: 2px;
+}
+.pricing .container button{
+    padding: 5px 10px;
+    width: 40%;
+    margin: 20px auto 0px;
+    border: 1px solid grey;
+    background-color: black;
+    color: #f3a84c;
+    font-weight: bold;
+    font-size: 17px;
+    border-radius: 3px;
+    cursor: pointer;
+    z-index: 2;
+    position: relative;
+    transition: 1s;
+}
+.pricing .container button:hover{
+    background-color:#f3a84c;
+    color: white;
+}
+
+.section{
+    width: 100%;
+    background-image: url(../images/plp.jpg);
+    background-attachment: fixed;
+    height: 300px;
+    margin: 60px 0;
+    background-size: cover;
+    position: relative;
+    overflow: auto;
+}
+.section::before{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.363);
+}
+.section .container{
+    padding: 100px 0px;
+}
+.section .left{
+    float: left;
+    width: 50%;
+    max-width: 40%;
+    position: relative;
+    margin-right: 20%;
+}
+.section .left img{
+    position: absolute;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+}
+.section .left h2{
+    color: white;
+    margin-left: 100px;
+    font-size: 30px;
+}
+.section .left span
+{
+    margin-left: 100px;
+    letter-spacing: 1px;
+    color: #f3a84c;
+    font-size: 16px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+.section .left p{
+    color: white;
+    margin-top: 20px;
+}
+.section .right{
+    float: left;
+    width: 50%;
+    max-width: 40%;
+    position: relative;
+}
+.section .right img{
+    position: absolute;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+}
+.section .right h2{
+    color: white;
+    margin-left: 100px;
+    font-size: 30px;
+}
+.section .right span
+{
+    margin-left: 100px;
+    letter-spacing: 1px;
+    color:#f3a84c;
+    font-size: 16px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+.section .right p{
+    color: white;
+    margin-top: 20px;
+}
+
+.team{
+    width: 100%;
+    overflow: auto;
+    margin: 60px 0;
+}
+.team .box{
+    float: left;
+    width: 30%;
+    padding: 18px;
+    text-align: center;
+    background-color: grey;
+    position: relative;
+}
+.team .box::before{
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 0%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.362);
+  transition: 1s;
+}
+.team .box:hover::before{
+    height: 100%;
+}
+.team .box .image{
+    position: relative;
+}
+.team .box .image img{
+    width: 100%;
+}
+.team .box .image .overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.685);
+    color: white;
+    opacity: 0;
+    transition: 1s;
+}
+.team .box:hover .image .overlay{
+    opacity: 1;
+}
+.team .box .image .overlay ul{
+    position: absolute;
+    right: 0;
+    top: 0;
+    list-style: none;
+    background-color: chocolate;
+    padding: 10px;
+    font-size: 24px;
+    right: -170px;
+    top: -20px;
+}
+.team .box .image .overlay ul li i{
+    line-height: 40px;
+    cursor: pointer;
+}
+.team .box .text h2{
+    font-weight: bold;
+    font-size: 28px;
+    margin-top: 10px;
+    transition: 1s;
+}
+.team .box:hover .text h2{
+    color: whitesmoke;
+}
+.team .box .text p{
+    font-size: 18px;
+    letter-spacing: 2;
+    color: whitesmoke;
+    transition: 1s;
+}
+.team .box:hover .text p{
+    color: black;
+}
+
+.news{
+    width: 100%;
+    margin: 60px 0px;
+    overflow: auto;
+}
+.news .box{
+    float: left;
+    width: 30%;
+    text-align: left;
+    padding: 15px;
+    position: relative;
+}
+.news .box::after{
+    position: absolute;
+    content: '';
+    background-color: rgba(252, 188, 124, 0.22);
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 0%;
+    transition: 1s;
+}
+.news .box::before{
+    position: absolute;
+    content: '';
+    background-color: rgba(252, 188, 124, 0.22);
+    right: 0;
+    bottom: 0;
+    width: 0%;
+    height: 0%;
+    transition: 1s;
+}
+.news .box:hover::after{
+    height: 50%;
+    width: 100%;
+}
+.news .box:hover::before{
+    height: 50%;
+    width: 100%;
+}
+.news .box img{
+    width: 80%;
+    height: 350px;
+}
+.news .box ul{
+    list-style: none;
+    margin:20px 0;
+}
+.news .box ul li{
+    display: inline-block;
+    margin-right: 15px;
+}
+.news .box ul li i{
+    color:#f3a84c;
+    margin-right: 5px;
+}
+.news .box h2{
+ margin: 20px 0px;
+ font-size: 24px;
+}
+.news .box p{
+ color: gray;
+ line-height: 1.6;
+ font-size: 18px;
+ letter-spacing: 1;
+}
+.news .box a{
+    text-decoration: none;
+    margin: 30px 0;
+    display: block;
+    background-color:grey;
+    color: black;
+    width: 40%;
+    padding: 8px;
+    text-align: center;
+    border-radius: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    transition: .3s;
+}
+.news .box a:hover{
+    color: black;
+    background-color: #f3a84c;
+}
+
+
+.footer{
+    width: 100%;
+    padding: 50px 0;
+    background-color:black;
+}
+.footer .content{
+    margin: auto;
+    width: 50%;
+    text-align: center;
+}
+.footer .content img{
+    width: 300px;
+    height: 200px;
+}
+.footer .content .social{
+    margin-top: 15px;
+}
+.footer .content .social i{
+    color: white;
+    margin: 0px 5px;
+    font-size: 33px;
+    cursor: pointer;
+    transition: .3s;
+}
+.footer .content .social i:hover{
+    transform: translateY(-2px);
+}
+.footer .content p{
+    margin-top: 10px;
+    color: white;
+}
